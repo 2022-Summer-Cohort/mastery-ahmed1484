@@ -27,6 +27,10 @@
                 <p th:text="${post.content}" class="post__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque blanditiis, aut quae fuga id quis ut. 
                     Eligendi necessitatibus blanditiis officia, odio deleniti natus molestiae fugiat ex quod vel aliquam illum.
                 </p>
+                <form th:action="'/posts/'+${post.id} +'/addHashtag' "method="post">
+                    <input placeholder="Hashtag" type="text" name="hashtag">
+                    <input type="submit" value="submit" >
+                </form>
             </section>
         </main>
     </div>
